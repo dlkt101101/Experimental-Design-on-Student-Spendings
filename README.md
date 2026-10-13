@@ -1,6 +1,6 @@
 # Budget Beliefs: Testing Bias in Perceived Spending Habits
 
-An experimental design and statistical analysis project investigating how student spending allocations are influenced by budget constraints and gender perception. Completed as part of **STAT 332: Sampling and Experimental Design** at the University of Waterloo by Madison, Raymond, and Darren.
+An experimental design and statistical analysis project investigating how student spending allocations are influenced by budget constraints and gender perception.
 
 ---
 
