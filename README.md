@@ -17,22 +17,22 @@ An experimental design and statistical analysis project investigating how studen
 ## 🔍 Overview
 
 How do people perceive student spending, and do implicit biases affect how financial responsibilities are judged? This project explores whether participants allocate funds differently between essentials and non-essentials based on:
-* **Budget Level:** Minimum ($1,050), Average ($1,700), and Maximum ($2,200) monthly budgets[cite: 1].
-* **Gender Perception:** Whether the allocated budget target is perceived as male or female (e.g., Christopher vs. Sara/Madison)[cite: 1].
+* **Budget Level:** Minimum ($1,050), Average ($1,700), and Maximum ($2,200) monthly budgets.
+* **Gender Perception:** Whether the allocated budget target is perceived as male or female (e.g., Christopher vs. Sara/Madison).
 
-**Why it matters:** Understanding these financial biases helps uncover stereotypical spending assumptions (akin to real-world phenomena like the "Pink Tax") before they shape broader economic decisions[cite: 1].
+**Why it matters:** Understanding these financial biases helps uncover stereotypical spending assumptions (akin to real-world phenomena like the "Pink Tax") before they shape broader economic decisions.
 
 ---
 
 ## 🧪 Experimental Design
 
-We utilized a **$2 \times 3$ Factorial Design** with a **blocking variable** on the gender of the participant[cite: 1].
+We utilized a **$2 \times 3$ Factorial Design** with a **blocking variable** on the gender of the participant.
 
-* **Factor 1 (Budget Level):** 3 levels (Low: $1,050, Medium: $1,700, High: $2,200)[cite: 1].
-* **Factor 2 (Gender Perception):** 2 levels (Male vs. Female name assigned to the budget profile)[cite: 1].
-* **Blocking Variable:** Participant Gender (Male vs. Female)[cite: 1].
-* **Sample Size:** 60 participants total, with 10 participants (5 male, 5 female) assigned to each of the 6 treatment versions[cite: 1].
-* **Response Variable:** Proportion of total budget allocated to essential items (e.g., rent, groceries, healthcare vs. takeout, subscriptions, shopping)[cite: 1].
+* **Factor 1 (Budget Level):** 3 levels (Low: $1,050, Medium: $1,700, High: $2,200).
+* **Factor 2 (Gender Perception):** 2 levels (Male vs. Female name assigned to the budget profile).
+* **Blocking Variable:** Participant Gender (Male vs. Female).
+* **Sample Size:** 60 participants total, with 10 participants (5 male, 5 female) assigned to each of the 6 treatment versions.
+* **Response Variable:** Proportion of total budget allocated to essential items (e.g., rent, groceries, healthcare vs. takeout, subscriptions, shopping).
 
 ---
 
@@ -42,46 +42,46 @@ The collected dataset consists of responses structured around monthly budget tem
 
 | Column / Variable | Type | Description |
 | :--- | :--- | :--- |
-| **ID** | Identifier | Unique participant ID (1 to 60)[cite: 1] |
-| **Gender of Participant** | Blocking Variable | Gender of the person filling out the survey[cite: 1] |
-| **Budget Level** | Factor 1 | Target monthly budget constraint ($1,050, $1,700, $2,200)[cite: 1] |
-| **Gender of Name** | Factor 2 | Perceived gender of the student profile (Male/Female)[cite: 1] |
-| **% Spent on Essentials** | Response Variable ($Y$) | The proportion of the total budget allocated to essential categories[cite: 1] |
+| **ID** | Identifier | Unique participant ID (1 to 60) |
+| **Gender of Participant** | Blocking Variable | Gender of the person filling out the survey |
+| **Budget Level** | Factor 1 | Target monthly budget constraint ($1,050, $1,700, $2,200) |
+| **Gender of Name** | Factor 2 | Perceived gender of the student profile (Male/Female) |
+| **% Spent on Essentials** | Response Variable ($Y$) | The proportion of the total budget allocated to essential categories |
 
 ---
 
 ## 📈 Exploratory Analysis & Results
 
-Data analysis was conducted using **R**, utilizing Analysis of Variance (ANOVA) and interaction plots to evaluate main effects and interactions at a significance level of $\alpha = 0.05$[cite: 1].
+Data analysis was conducted using **R**, utilizing Analysis of Variance (ANOVA) and interaction plots to evaluate main effects and interactions at a significance level of $\alpha = 0.05$.
 
 ### ANOVA Summary Table
-* **Budget Level (Factor 1):** Highly significant ($p < 0.001$), showing a strong main effect where higher budgets lead to a lower proportion allocated to essentials[cite: 1].
-* **Gender Perception (Factor 2):** Insignificant main effect ($p \approx 0.140$)[cite: 1].
-* **Participant Block:** Insignificant blocking factor ($p \approx 0.544$)[cite: 1].
-* **Interaction (Factor 1 $\times$ Factor 2):** Statistically significant interaction ($p = 0.041$), indicating that the effect of budget level on essential allocations depends on the gender perception of the profile[cite: 1].
+* **Budget Level (Factor 1):** Highly significant ($p < 0.001$), showing a strong main effect where higher budgets lead to a lower proportion allocated to essentials.
+* **Gender Perception (Factor 2):** Insignificant main effect ($p \approx 0.140$).
+* **Participant Block:** Insignificant blocking factor ($p \approx 0.544$).
+* **Interaction (Factor 1 $\times$ Factor 2):** Statistically significant interaction ($p = 0.041$), indicating that the effect of budget level on essential allocations depends on the gender perception of the profile.
 
 ---
 
 ## 💡 Key Findings & Conclusions
 
-1. **Budget Constraints Drive Allocations:** As total monthly budgets increase, participants naturally shift a smaller proportion toward essentials and allocate more flexibility toward non-essentials[cite: 1].
-2. **Gender Interaction Bias:** While gender perception alone did not dictate spending allocation across the board, its significant interaction with budget levels highlights subtle biases in how male vs. female student budgets are evaluated at scale[cite: 1].
+1. **Budget Constraints Drive Allocations:** As total monthly budgets increase, participants naturally shift a smaller proportion toward essentials and allocate more flexibility toward non-essentials.
+2. **Gender Interaction Bias:** While gender perception alone did not dictate spending allocation across the board, its significant interaction with budget levels highlights subtle biases in how male vs. female student budgets are evaluated at scale.
 
 ---
 
 ## ⚠️ Limitations & Future Extensions
 
 * **Limitations:** 
-  * The blocking factor (`Gender of name`) was statistically insignificant[cite: 1].
-  * Relatively small sample size relative to the broader population[cite: 1].
-  * Essential vs. non-essential classifications were pre-determined by our team's interpretation rather than letting participants define them independently[cite: 1].
+  * The blocking factor (`Gender of name`) was statistically insignificant.
+  * Relatively small sample size relative to the broader population.
+  * Essential vs. non-essential classifications were pre-determined by our team's interpretation rather than letting participants define them independently.
 * **Potential Extensions:**
-  * Introducing new blocking variables, such as comparing **International vs. Domestic students**[cite: 1].
-  * Adding rich contextual vignettes detailing a student's specific living situation to measure how qualitative context alters financial allocations[cite: 1].
+  * Introducing new blocking variables, such as comparing **International vs. Domestic students**.
+  * Adding rich contextual vignettes detailing a student's specific living situation to measure how qualitative context alters financial allocations.
 
 ---
 
 ## 👥 Contributors
-* **Madison**[cite: 1]
-* **Raymond**[cite: 1]
-* **Darren**[cite: 1]
+* **Darren**
+* **Madison**
+* **Raymond**
